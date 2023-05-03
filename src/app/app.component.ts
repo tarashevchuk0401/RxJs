@@ -1,5 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { from, fromEvent } from 'rxjs';
+import { funcObservable, functionObs } from './services/Function';
 
 @Component({
   selector: 'app-root',
@@ -28,24 +29,36 @@ export class AppComponent implements AfterViewInit{
   promiseObservable$ = from(this.promise)
 
   constructor(){
-    this.postArrayObservable$.subscribe({
-      next: (data) => console.log(data),
-      error: (error) => console.log(error),
-      complete:() => console.log('done')
-    })
+    // this.postArrayObservable$.subscribe({
+    //   next: (data) => console.log(data),
+    //   error: (error) => console.log(error),
+    //   complete:() => console.log('done')
+    // })
 
-    this.promiseObservable$.subscribe({
-      next: (data) => console.log(data),
-      error: (d) => console.log(d + 'err')
-    })
+    // this.promiseObservable$.subscribe({
+    //   next: (data) => console.log(data),
+    //   error: (d) => console.log(d + 'err')
+    // })
+    // console.log('before fn')
+    // console.log(functionObs())
+    // console.log(functionObs())
+    // console.log('after fn')
+    // console.log('__________');
+
+    // // console.log(funcObservable())
+
+    // funcObservable.subscribe(d => console.log(d))
+    // funcObservable.subscribe(d => console.log(d))
+    // console.log('__________');
+
   }
 
   ngAfterViewInit(): void {
-    fromEvent(document.getElementById('clickButton')!, 'click').subscribe({
-      next: (data) => console.log(data),
-      error: (error) => console.log(error),
-      complete:() => console.log('AFTER V')
-    })
+    // fromEvent(document.getElementById('clickButton')!, 'click').subscribe({
+    //   next: (data) => console.log(data),
+    //   error: (error) => console.log(error),
+    //   complete:() => console.log('AFTER V')
+    // })
   }
 
 
