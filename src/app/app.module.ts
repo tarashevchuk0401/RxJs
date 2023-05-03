@@ -7,6 +7,11 @@ import { NewObservableComponent } from './new-observable/new-observable.componen
 import { FunctionObservableComponent } from './function-observable/function-observable.component';
 import { CancellingObservableComponent } from './cancelling-observable/cancelling-observable.component';
 import { OperatorsBasicsComponent } from './operators-basics/operators-basics.component';
+import { BufferComponent } from './pages/buffer/buffer.component';
+import { PagesComponent } from './pages/pages/pages.component';
+import { BufferwhenComponent } from './pages/bufferwhen/bufferwhen.component';
+import { TakeComponent } from './pages/take/take.component';
+import { SkipComponent } from './pages/skip/skip.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { OperatorsBasicsComponent } from './operators-basics/operators-basics.co
     NewObservableComponent,
     FunctionObservableComponent,
     CancellingObservableComponent,
-    OperatorsBasicsComponent
+    OperatorsBasicsComponent,
+    BufferComponent,
+    PagesComponent,
+    BufferwhenComponent,
+    TakeComponent,
+    SkipComponent
   ],
   imports: [
     BrowserModule,

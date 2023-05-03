@@ -1,0 +1,18 @@
+<p>buffer works!</p>
+
+<button (click)="startInterval()">Satrt interval</button>
+<button id="showDataNow">show data now</button>
+
+<div *ngIf="intervalData.length">
+    <div *ngFor="let d of intervalData">{{d}}</div>
+</div>
+
+<div>
+    <h2>BufferTime</h2>
+    <button></button>
+</div>
+
+<div>
+    <h2>BufferToggle</h2>
+    <button (click)="toggle()"> Toggle</button>
+</div>

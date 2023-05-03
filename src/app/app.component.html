@@ -1,8 +1,15 @@
+<button routerLink="pages">Pages</button>
 
-<app-operators-basics></app-operators-basics>
-<hr>
-<!-- <app-new-observable></app-new-observable>
-<hr>
-<app-function-observable></app-function-observable>
-<hr>
-<app-cancelling-observable></app-cancelling-observable> -->
+<!-- <router-outlet></router-outlet>s -->
+
+<main>
+  <div class="buttons">
+    <button routerLink="/buffer">Buffer</button>
+    <button routerLink="/bufferwhen">BufferWhen</button>
+    <button routerLink="/take">Take</button>
+    <button routerLink="/skip">Skip</button>
+  </div>
+  <div class="result">
+    <router-outlet></router-outlet>
+  </div>
+</main>
