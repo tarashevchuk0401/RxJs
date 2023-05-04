@@ -8,6 +8,10 @@ import { SkipComponent } from './pages/skip/skip.component';
 import { DistinctComponent } from './pages/distinct/distinct.component';
 import { SampleComponent } from './pages/sample/sample.component';
 import { AuditComponent } from './pages/audit/audit.component';
+import { ThrotleComponent } from './pages/throtle/throtle.component';
+import { FirstComponent } from './pages/first/first.component';
+import { LastComponent } from './pages/last/last.component';
+import { DebounceComponent } from './pages/debounce/debounce.component';
 
 const routes: Routes = [
   {path: '', component: PagesComponent },
@@ -20,6 +24,10 @@ const routes: Routes = [
   {path: 'sample', component: SampleComponent },
   {path: 'distinct', component: DistinctComponent },
   {path: 'audit', component: AuditComponent },
+  {path: 'throtle', component: ThrotleComponent },
+  {path: 'first', component: FirstComponent },
+  {path: 'last', component: LastComponent },
+  {path: 'debounce', component: DebounceComponent },
 ];
 
 @NgModule({

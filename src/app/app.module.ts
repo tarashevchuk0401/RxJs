@@ -15,6 +15,10 @@ import { SkipComponent } from './pages/skip/skip.component';
 import { DistinctComponent } from './pages/distinct/distinct.component';
 import { SampleComponent } from './pages/sample/sample.component';
 import { AuditComponent } from './pages/audit/audit.component';
+import { ThrotleComponent } from './pages/throtle/throtle.component';
+import { FirstComponent } from './pages/first/first.component';
+import { LastComponent } from './pages/last/last.component';
+import { DebounceComponent } from './pages/debounce/debounce.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { AuditComponent } from './pages/audit/audit.component';
     SkipComponent,
     DistinctComponent,
     SampleComponent,
-    AuditComponent
+    AuditComponent,
+    ThrotleComponent,
+    FirstComponent,
+    LastComponent,
+    DebounceComponent
   ],
   imports: [
     BrowserModule,

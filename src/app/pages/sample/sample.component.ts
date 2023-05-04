@@ -9,7 +9,7 @@ import { fromEvent, interval, sample, merge, mapTo } from 'rxjs';
 export class SampleComponent implements OnInit{
 
   ngOnInit(): void {
-    interval(500).pipe(sample(interval(2000))).subscribe(d => console.log(d))
+    interval(1000).pipe(sample(interval(3000))).subscribe(d => console.log(d))
   }
 
    listener = merge(
