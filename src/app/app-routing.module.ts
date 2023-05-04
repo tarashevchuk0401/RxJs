@@ -5,6 +5,9 @@ import { BufferComponent } from './pages/buffer/buffer.component';
 import { BufferwhenComponent } from './pages/bufferwhen/bufferwhen.component';
 import { TakeComponent } from './pages/take/take.component';
 import { SkipComponent } from './pages/skip/skip.component';
+import { DistinctComponent } from './pages/distinct/distinct.component';
+import { SampleComponent } from './pages/sample/sample.component';
+import { AuditComponent } from './pages/audit/audit.component';
 
 const routes: Routes = [
   {path: '', component: PagesComponent },
@@ -13,6 +16,10 @@ const routes: Routes = [
   {path: 'bufferwhen', component: BufferwhenComponent },
   {path: 'take', component: TakeComponent },
   {path: 'skip', component: SkipComponent },
+  {path: 'skip', component: SkipComponent },
+  {path: 'sample', component: SampleComponent },
+  {path: 'distinct', component: DistinctComponent },
+  {path: 'audit', component: AuditComponent },
 ];
 
 @NgModule({

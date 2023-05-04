@@ -12,6 +12,9 @@ import { PagesComponent } from './pages/pages/pages.component';
 import { BufferwhenComponent } from './pages/bufferwhen/bufferwhen.component';
 import { TakeComponent } from './pages/take/take.component';
 import { SkipComponent } from './pages/skip/skip.component';
+import { DistinctComponent } from './pages/distinct/distinct.component';
+import { SampleComponent } from './pages/sample/sample.component';
+import { AuditComponent } from './pages/audit/audit.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { SkipComponent } from './pages/skip/skip.component';
     PagesComponent,
     BufferwhenComponent,
     TakeComponent,
-    SkipComponent
+    SkipComponent,
+    DistinctComponent,
+    SampleComponent,
+    AuditComponent
   ],
   imports: [
     BrowserModule,
