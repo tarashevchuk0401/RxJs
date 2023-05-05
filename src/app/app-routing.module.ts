@@ -12,6 +12,11 @@ import { ThrotleComponent } from './pages/throtle/throtle.component';
 import { FirstComponent } from './pages/first/first.component';
 import { LastComponent } from './pages/last/last.component';
 import { DebounceComponent } from './pages/debounce/debounce.component';
+import { ElementAtComponent } from './pages/element-at/element-at.component';
+import { IgnoreElementComponent } from './pages/ignore-element/ignore-element.component';
+import { SingleComponent } from './pages/single/single.component';
+import { MapComponent } from './pages/map/map.component';
+import { AjaxComponent } from './pages/ajax/ajax.component';
 
 const routes: Routes = [
   {path: '', component: PagesComponent },
@@ -28,6 +33,11 @@ const routes: Routes = [
   {path: 'first', component: FirstComponent },
   {path: 'last', component: LastComponent },
   {path: 'debounce', component: DebounceComponent },
+  {path: 'elementAt', component: ElementAtComponent },
+  {path: 'ignoreElement', component: IgnoreElementComponent },
+  {path: 'single', component: SingleComponent },
+  {path: 'map', component: MapComponent },
+  {path: 'ajax', component: AjaxComponent },
 ];
 
 @NgModule({

@@ -10,7 +10,7 @@ export class TakeComponent implements OnInit, AfterViewInit {
 
   buttonEvent! : Observable<Event>;
   seconds$ = interval(1000);
-  counter: number = 0;
+  counter: number = 0; 
 
   ngOnInit(): void {
     this.seconds$.pipe(
